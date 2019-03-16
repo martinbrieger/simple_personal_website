@@ -1,0 +1,22 @@
+baseURL = "/"
+languageCode = "de-de"
+
+title = "Christina Brieger"
+
+## Site Settings
+[params]
+author = "Martin Brieger"
+description = "Architektin"
+
+## Site Meta Settings
+[params.meta]
+description = "Architekt Architektin Rosenheim"
+keywords = "Architekt, Architektin, Rosenheim, Architektur, Entwurf, Planung, Brieger, Christina"
+
+## Social Accounts
+[params.social]
+email = "c.brieger@mailbox.org"
+
+## Extras
+[params.extra]
+copyright = "by Martin Brieger © 2019"

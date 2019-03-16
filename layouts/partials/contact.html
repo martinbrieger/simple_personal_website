@@ -1,0 +1,62 @@
+<div id="social_pane">
+  <div style="width: 100%; overflow: hidden;">
+      <div style="width: 50%; float: left;" id="social_pane_left">
+            <table>
+                    <tr>
+                        <th>Kontakt:</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-home"></i></td>
+                        <td>Christina Brieger, Dipl. Ing.(FH), Architektin</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Rosenheim</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-envelope"></i></td>
+                        <td><a href="mailto:{{ .Site.Params.social.email }}" aria-label="Email">c.brieger@mailbox.org</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-phone"></i></td>
+                        <td><a href="callto:0123456789">0123 456789</a></td>
+                    </tr>
+                </table>
+      </div>
+      <div style="width: 50%; float: right;" id="social_pane_right">
+        <form action="mail_handler.php" method="POST">
+          <table align="right">
+            <tr>
+                <th><br></th>
+            </tr>
+            <tr>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td><input type="email" name="mail" id="mail" placeholder="&#xf0e0  E-Mail" required></td>
+                <td><input type="text" name="name" id="name" placeholder="&#xf007  Name"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><textarea id="message" name="message" placeholder="&#xf036  Nachricht" rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input id=send_button type="submit" value="Nachricht senden"></td>
+            </tr>
+          </table>
+        </form>
+            
+      </div>
+    
+
+  </div>

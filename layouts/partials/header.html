@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    {{ with .Site.Params.meta.description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ with .Site.Params.meta.keywords }}<meta name="keywords" content="{{.}}">{{ end }}
+    
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
+    <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
+    <link rel="stylesheet" href="{{ "css/slides.css" | absURL }}">
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <base href="{{ .Site.BaseURL }}">
+
+  </head>
+
+  <body>
+
+    <div id="header">
+      <header lang="{{ .Site.LanguageCode }}">
+        <title>{{ .Site.Title }}</title>
+        <h1>{{ .Site.Title }}</h1>
+        <h2>{{ .Site.Params.Description }}</h2>
+      </header>
+    </div>
