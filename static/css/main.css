@@ -29,15 +29,15 @@ html
 }
 input
 {
+    width: 100%;
     font-family: Roboto, 'FontAwesome', sans-serif;
-    font-size: 16px;
+    font-size: calc(12px + 0.3vw);
     color: #E0E0E0;
-    width: 173px;
     padding: 5px;
     border: 1px solid;
     border-color: #757575;
     background-color: #757575;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.2s ease;
 }
 input:hover
 {
@@ -46,16 +46,15 @@ input:hover
 }
 textarea
 {
+    width: 100%;
     font-family: Roboto, 'FontAwesome', sans-serif;
-    font-size: 16px;
+    font-size: calc(12px + 0.3vw);
     color: #E0E0E0;
-    width: 350px;
-    max-width: 350px;
     padding: 5px;
     border: 1px solid;
     border-color: #757575;
     background-color: #757575;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.2s ease;
 }
 textarea:hover
 {
@@ -66,25 +65,16 @@ h1
 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 200;
-    font-size: 50px;
-    color: #757575;
-    transition: transform .8s;
-}
-h1:hover
-{
-    transform: scale(1.2);
+    font-size: calc(20px + 3vw);
+    color: #616161;
 }
 h2
 {
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    font-size: 48px;
-    color: #757575;
-    transition: transform .8s;
-}
-h2:hover
-{
-    transform: scale(1.2);
+    font-size: calc(18px + 2vw);
+    color: #616161;
+
 }
 
 /* IDs */
@@ -92,8 +82,8 @@ h2:hover
 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     text-align: center;
     line-height: 2rem
 }
@@ -101,10 +91,11 @@ h2:hover
 {
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    font-size: 16px;
+    font-size: calc(12px + 0.3vw);
     color: #E0E0E0;
     padding: 20px;
     background-color: #616161;
+    border-radius: 1px;
 }
 #social_pane
 {
@@ -118,21 +109,23 @@ h2:hover
     text-align: left;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    font-size: 16px;
+    font-size: calc(12px + 0.3vw);
     color: #E0E0E0;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: 20px;
     margin-bottom: 20px;
+}
+.fas
+{
+    padding-right: 20px;
 }
 #social_pane_right
 {
     text-align: right;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    font-size: 16px;
+    font-size: calc(12px + 0.3vw);
     color: #ECEFF1;
-    padding-top: 20px;
-    padding-right: 20px;
+    padding: 20px;
     margin-bottom: 20px;
 }
 #send_button
@@ -149,8 +142,8 @@ h2:hover
     color: #616161
 }
 #send_button:active{
-    color: green;
-    border-color: green;
+    color: turquoise;
+    border-color: turquoise;
 }
 a
 {
@@ -161,10 +154,9 @@ a
     background-color: #EEEEEE;
     text-align: center;
     vertical-align: bottom;
-    margin-bottom: 5px;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    font-size: 16px;
+    font-size: calc(12px + 0.3vw);
     color: #1F232E;
     padding-top: 50px;
     padding-bottom: 5px;
@@ -200,5 +192,13 @@ a
     }
     to {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    html {
+        margin-left: 0%;
+        margin-right: 0%;
     }
 }
