@@ -24,6 +24,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 
     <base href="{{ .Site.BaseURL }}">
+    <title>{{ .Site.Title }}</title>
 
   </head>
 
@@ -31,7 +32,6 @@
 
     <div id="header">
       <header lang="{{ .Site.LanguageCode }}">
-        <title>{{ .Site.Title }}</title>
         <h1>{{ .Site.Title }}</h1>
         <h2>{{ .Site.Params.Description }}</h2>
       </header>

@@ -1,0 +1,77 @@
+<!-- Slideshow container -->
+<div id="slides">
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="1.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-caret-left"></i></a>
+  <a class="next" onclick="plusSlides(1)"><i class="fas fa-caret-right"></i></a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<div id="Text">
+  <strong>'Baumhaus'</strong> <br>
+  Edling bei Wasserburg<br>
+  <br>
+  Neubau eines Einfamilienhauses<br>
+  in Massivholzbauweise<br>
+  Fertigsstellung Herbst 2018<br>
+  Nutzfläche 130 m<br>
+  <br>
+  Klarer Baukörper - Holz, auch auf dem Dach -<br>
+  am Ortsrand<br>
+  mit Ausblick<br>
+  <br>
+  Veröffentlichung Architektouren 2019<br>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+</script>
+</div>

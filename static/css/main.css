@@ -15,11 +15,11 @@
 /*groups*/
 body
 {
-    margin-bottom: 0px;
+    margin: 0 0 0 0;
 }
 html
 {
-    background-color: white;
+    background-color: #EEEEEE;
     margin-left: 15%;
     margin-right: 15%;
     animation: fadein 3s;
@@ -27,48 +27,47 @@ html
     -webkit-animation: fadein 3s; /* Safari and Chrome */
     -o-animation: fadein 3s; /* Opera */
 }
-header
-{
-    text-align: center;
-}
-footer
-{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 200;
-    font-size: 16px;
-    color: #ECEFF1;
-    padding-bottom: 10px;
-}
 input
 {
     font-family: Roboto, 'FontAwesome', sans-serif;
     font-size: 16px;
-    color: #1F232E;
+    color: #E0E0E0;
     width: 173px;
     padding: 5px;
-    border: none;
-    border-radius: 1px;
-    background-color: #ECEFF1;
+    border: 1px solid;
+    border-color: #757575;
+    background-color: #757575;
+    transition: border-color 0.3s ease;
+}
+input:hover
+{
+    border: 1px solid;
+    border-color: #E0E0E0;
 }
 textarea
 {
     font-family: Roboto, 'FontAwesome', sans-serif;
     font-size: 16px;
-    color: #1F232E;
+    color: #E0E0E0;
     width: 350px;
     max-width: 350px;
     padding: 5px;
-    border: none;
-    border-radius: 1px;
-    background-color: #ECEFF1;
+    border: 1px solid;
+    border-color: #757575;
+    background-color: #757575;
+    transition: border-color 0.3s ease;
+}
+textarea:hover
+{
+    border: 1px solid;
+    border-color: #E0E0E0;
 }
 h1
 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 200;
     font-size: 50px;
-    color: #1F232E;
+    color: #757575;
     transition: transform .8s;
 }
 h1:hover
@@ -79,36 +78,40 @@ h2
 {
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    font-size: 38px;
-    color: #1F232E;
+    font-size: 48px;
+    color: #757575;
     transition: transform .8s;
 }
 h2:hover
 {
     transform: scale(1.2);
 }
-h6
-{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 200;
-    font-size: 10px;
-    color: #1F232E;
-}
+
 /* IDs */
 #header
 {
-    margin-top: 150px;
-    margin-bottom: 150px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    line-height: 2rem
 }
-#slides
+#Text
 {
-    margin-top: 50px;
-    margin-bottom: 50px; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: #E0E0E0;
+    padding: 20px;
+    background-color: #616161;
 }
 #social_pane
 {
-    background-color: #1F232E;
+    background-color: #616161;
     border-radius: 1px 1px 0 0;
+    margin-top: 50px;
+    margin-bottom: 0px;
 }
 #social_pane_left
 {
@@ -116,10 +119,10 @@ h6
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
     font-size: 16px;
-    color: #ECEFF1;
+    color: #E0E0E0;
     padding-top: 20px;
     padding-left: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 #social_pane_right
 {
@@ -129,34 +132,42 @@ h6
     font-size: 16px;
     color: #ECEFF1;
     padding-top: 20px;
-    padding-right: 80px;
-    margin-bottom: 50px;
-}
-#footer
-{
-    background-color: #1F232E;
-    
+    padding-right: 20px;
+    margin-bottom: 20px;
 }
 #send_button
 {
-    background-color: #1F232E;
-    color: #ECEFF1;
+    background-color: #616161;
+    color: #E0E0E0;
     border: 1px solid;
-    border-color: #ECEFF1;
-    transition: background-color 0.3s ease;
+    border-color: #E0E0E0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 #send_button:hover
 {
-    background-color: #ECEFF1;
-    color: #1F232E
+    background-color: #E0E0E0;
+    color: #616161
 }
 #send_button:active{
-    color: red;
-    border-color: red;
+    color: green;
+    border-color: green;
 }
 a
 {
     color: #ECEFF1;
+}
+#footer
+{
+    background-color: #EEEEEE;
+    text-align: center;
+    vertical-align: bottom;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: #1F232E;
+    padding-top: 50px;
+    padding-bottom: 5px;
 }
 
 @keyframes fadein {

@@ -1,35 +1,78 @@
-<!-- Slideshow container -->
-<div id="slides">
-<div class="slideshow-container">
+ <!-- Container for the image gallery -->
+ <div id="slides" class="container">
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <img src="3.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="2.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="1.jpg" style="width:100%">
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-caret-left"></i></a>
-  <a class="next" onclick="plusSlides(1)"><i class="fas fa-caret-right"></i></a>
+    <!-- Full-width images with number text -->
+    <div class="mySlides fade">
+        <img src="1_SW_Westansicht.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+        <img src="2_SW_Südansicht.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+        <img src="3_SW_Ostansicht.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+        <img src="4_SW_Nordostansicht.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+        <img src="5_Nacht_Ost.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+        <img src="6_Nacht_Nord.jpg" style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+    </a>
+    <a class="next" onclick="plusSlides(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+    </a>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="1_SW_Westansicht.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="2_SW_Südansicht.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="3_SW_Ostansicht.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="4_SW_Nordostansicht.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="5_Nacht_Ost.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="6_Nacht_Nord.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      </div>
+    </div>
 </div>
-<br>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
+<div id="Text">
+    <strong>'Baumhaus'</strong> <br>
+    Edling bei Wasserburg<br>
+    <br>
+    Neubau eines Einfamilienhauses<br>
+    in Massivholzbauweise<br>
+    Fertigsstellung Herbst 2018<br>
+    Nutzfläche 130 m<br>
+    <br>
+    Klarer Baukörper - Holz, auch auf dem Dach -<br>
+    am Ortsrand<br>
+    mit Ausblick<br>
+    <br>
+    Veröffentlichung Architektouren 2019<br>
 </div>
 
 <script>
-var slideIndex = 1;
+  var slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -45,17 +88,18 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
 } 
 </script>
-</div>
