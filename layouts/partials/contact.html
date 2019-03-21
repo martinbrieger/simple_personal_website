@@ -1,16 +1,7 @@
 <div id="social_pane">
   <div style="width: 100%; overflow: hidden;">
-      <div style="width: 50%; float: left;" id="social_pane_left">
+      <div id="social_pane_left">
             <table>
-                    <tr>
-                        <th colspan="2">Kontakt:</th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td><br></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
                     <tr>
                         <td style="vertical-align:top"><i class="fas fa-home"></i></td>
                         <td><a>Christina Brieger, Dipl. Ing. (FH), Architektin</a></td>
@@ -23,7 +14,7 @@
                     </tr>
                     <tr>
                         <td><i class="fas fa-envelope"></i></td>
-                        <td><a href="mailto:{{ .Site.Params.social.email }}" aria-label="Email">c.brieger@mailbox.org</a></td>
+                        <td><a href="mailto:{{ .Site.Params.social.email }}" aria-label="Email">{{ .Site.Params.social.email }}</a></td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -33,15 +24,9 @@
                     </tr>
                 </table>
       </div>
-      <div style="width: 50%; float: right;" id="social_pane_right">
+      <div id="social_pane_right">
         <form action="mail_handler.php" method="POST">
           <table style="width: 100%; overflow: hidden;">
-            <tr>
-                <th><br></th>
-            </tr>
-            <tr>
-                <td><br></td>
-            </tr>
             <tr>
                 <td style="width: 50%; float: left;"><input type="email" name="mail" id="mail" placeholder="&#xf0e0  E-Mail" required></td>
                 <td style="width: 50%; float: right;"><input type="text" name="name" id="name" placeholder="&#xf007  Name"></td>
