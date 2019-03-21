@@ -10,7 +10,7 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td><a>83022 Rosenheim, Deutschland</td>
+                        <td><a>83022 Rosenheim, Deutschland</a></td>
                     </tr>
                     <tr>
                         <td><i class="fas fa-envelope"></i></td>
@@ -28,11 +28,11 @@
         <form action="mail_handler.php" method="POST">
           <table style="width: 100%; overflow: hidden;">
             <tr>
-                <td style="width: 50%; float: left;"><input type="email" name="mail" id="mail" placeholder="&#xf0e0  E-Mail" required></td>
-                <td style="width: 50%; float: right;"><input type="text" name="name" id="name" placeholder="&#xf007  Name"></td>
+                <td style="width: 50%; float: left;"><input type="email" name="mail" id="mail" value="&#xf0e0;  E-Mail" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" required></td>
+                <td style="width: 50%; float: left;"><input type="text" name="name" id="name" value="&#xf007;  Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"></td>
             </tr>
             <tr>
-                <td colspan="2" style="width: 100%; float: center;"><textarea id="message" name="message" placeholder="&#xf036  Nachricht" rows="2"></textarea></td>
+                <td colspan="2" style="width: 100%; float: center;"><textarea id="message" name="message" placeholder="&#xf036;  Nachricht" rows="2">&#xf036;  Nachricht</textarea></td>
             </tr>
             <tr>
                 <td style="width: 50%; float: left;"></td>

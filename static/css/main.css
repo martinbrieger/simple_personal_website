@@ -30,7 +30,7 @@ html
 input
 {
     width: 100%;
-    font-family: Roboto, 'FontAwesome', sans-serif;
+    font-family: 'FontAwesome', Roboto, sans-serif;
     font-size: calc(12px + 0.3vw);
     color: #E0E0E0;
     padding: 5px;
@@ -47,9 +47,9 @@ input:hover
 textarea
 {
     width: 100%;
-    max-width: 100%;
-    min-width: 100%;
-    font-family: Roboto, 'FontAwesome', sans-serif;
+    min-height: 2em;
+    resize: vertical;
+    font-family: 'FontAwesome', Roboto, sans-serif;
     font-size: calc(12px + 0.3vw);
     color: #E0E0E0;
     padding: 5px;
@@ -82,10 +82,7 @@ h2
 /* IDs */
 #header
 {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding: 5vw 20px 5vw 20px;
     text-align: center;
     line-height: 2rem
 }
@@ -93,7 +90,7 @@ h2
 {
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    font-size: calc(12px + 0.3vw);
+    font-size: calc(14px + 0.2vw);
     color: #E0E0E0;
     padding: 20px;
     background-color: #616161;
@@ -103,7 +100,7 @@ h2
 {
     background-color: #616161;
     border-radius: 1px 1px 0 0;
-    margin-top: 50px;
+    margin-top: calc(20px + 2vw);
     margin-bottom: 0px;
 }
 #social_pane_left
@@ -113,7 +110,7 @@ h2
     text-align: left;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    font-size: calc(12px + 0.3vw);
+    font-size: calc(14px + 0.2vw);
     color: #E0E0E0;
     padding: 20px;
 }
@@ -128,7 +125,7 @@ h2
     text-align: right;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    font-size: calc(12px + 0.3vw);
+    font-size: calc(14px + 0.2vw);
     color: #ECEFF1;
     padding: 20px;
 }
@@ -151,21 +148,31 @@ h2
 }
 a
 {
-    color: #ECEFF1;
+    color: inherit;
 }
 #footer
 {
+    width: 100%; 
+    overflow: hidden;
     background-color: #EEEEEE;
-    text-align: center;
     vertical-align: bottom;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    font-size: calc(12px + 0.3vw);
-    color: #1F232E;
-    padding-top: 50px;
+    font-size: calc(10px + 0.3vw);
+    color: #616161;
+    padding-top: calc(20px + 2vw);
     padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-
+#copyright
+{
+    float: right;
+}
+#privacy
+{
+    float: left;
+}
 @keyframes fadein {
     from {
         opacity:0;
