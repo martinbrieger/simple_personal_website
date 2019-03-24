@@ -66,15 +66,15 @@ textarea:hover
 h1
 {
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 200;
-    font-size: calc(20px + 3vw);
+    font-weight: 300;
+    font-size: calc(20px + 2.6vw);
     color: #616161;
 }
 h2
 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 200;
-    font-size: calc(18px + 2vw);
+    font-weight: 100;
+    font-size: calc(18px + 2.4vw);
     color: #616161;
 
 }
@@ -82,9 +82,9 @@ h2
 /* IDs */
 #header
 {
-    padding: 5vw 20px 5vw 20px;
+    padding: 2vw 20px 2vw 20px;
     text-align: center;
-    line-height: 2rem
+    line-height: 1.6rem
 }
 #Text
 {
@@ -102,6 +102,10 @@ h2
     border-radius: 1px 1px 0 0;
     margin-top: calc(20px + 2vw);
     margin-bottom: 0px;
+}
+.shadow
+{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
 }
 #social_pane_left
 {
@@ -154,7 +158,6 @@ a
 {
     width: 100%; 
     overflow: hidden;
-    background-color: #EEEEEE;
     vertical-align: bottom;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
@@ -164,14 +167,8 @@ a
     padding-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
-}
-#copyright
-{
-    float: right;
-}
-#privacy
-{
-    float: left;
+    float: center;
+    text-align: center;
 }
 @keyframes fadein {
     from {
@@ -216,6 +213,12 @@ a
         float: none;
         width: 100%;
         padding-top: 0px;
+    }
+    .shadow {
+        box-shadow: none;
+    }
+    .container {
+        box-shadow: none;
     }
 }
 @media screen and (max-width: 1200px)
