@@ -81,8 +81,8 @@ h2
 h3
 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: calc(16px + 2vw);
+    font-weight: 100;
+    font-size: calc(18px + 2.4vw);
     color: #616161;
 }
 
@@ -96,11 +96,11 @@ h3
 #Text
 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     font-size: calc(14px + 0.2vw);
-    color: #616161;
+    color: #E0E0E0;
     padding: 20px;
-    background-color: #E0E0E0;
+    background-color: #616161;
     border-radius: 1px;
 }
 #social_pane
@@ -109,6 +109,10 @@ h3
     border-radius: 1px 1px 0 0;
     margin-top: calc(20px + 2vw);
     margin-bottom: 0px;
+}
+.shadow
+{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
 }
 #social_pane_left
 {
@@ -157,10 +161,6 @@ a
 {
     color: inherit;
 }
-p
-{
-    margin: 0;
-}
 #footer
 {
     width: 100%; 
@@ -180,13 +180,6 @@ p
 .privacy
 {
     text-align: left;
-    padding: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: calc(14px + 0.2vw);
-    background-color: #E0E0E0;
-    margin-top: calc(20px + 2vw);
-
 }
 @keyframes fadein {
     from {
@@ -231,6 +224,12 @@ p
         float: none;
         width: 100%;
         padding-top: 0px;
+    }
+    .shadow {
+        box-shadow: none;
+    }
+    .container {
+        box-shadow: none;
     }
     .privacy {
         width: 100%;

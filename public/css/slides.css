@@ -22,13 +22,13 @@
   .next {
     cursor: pointer;
     position: absolute;
-    top: calc(42% - 14px);
+    top: 40%;
     width: auto;
-    padding: 18px 18px 14px 18px;
-    margin-top: -15px;
+    padding: 16px;
+    margin-top: -50px;
     color: white;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
