@@ -3,6 +3,8 @@ languageCode = "de-de"
 
 title = "Christina Brieger"
 
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
 ## Site Settings
 [params]
 author = "Martin Brieger"
@@ -20,3 +22,4 @@ email = "architektur@christina-brieger.de"
 ## Extras
 [params.extra]
 copyright = "Made by Martin Brieger ©2019"
+
