@@ -177,7 +177,6 @@ p
     font-weight: 300;
     font-size: calc(14px + 0.2vw);
     background-color: #E0E0E0;
-    margin-top: calc(20px + 2vw);
 
 }
 @keyframes fadein {
