@@ -105,7 +105,7 @@ h3
 }
 #social_pane
 {
-    background-color: #616161;
+    background-color: #E0E0E0;
     border-radius: 1px 1px 0 0;
     margin-top: calc(20px + 2vw);
     margin-bottom: 0px;
@@ -116,9 +116,9 @@ h3
     float: left;
     text-align: left;
     font-family: 'Roboto', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: calc(14px + 0.2vw);
-    color: #E0E0E0;
+    color: #616161;
     padding: 20px;
 }
 .fas
@@ -131,9 +131,9 @@ h3
     float: right;
     text-align: right;
     font-family: 'Roboto', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: calc(14px + 0.2vw);
-    color: #ECEFF1;
+    color: #616161;
     padding: 20px;
 }
 #send_button
