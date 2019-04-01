@@ -32,17 +32,13 @@ input
     width: 100%;
     font-family: 'FontAwesome', Roboto, sans-serif;
     font-size: calc(12px + 0.3vw);
-    color: #E0E0E0;
+    font-weight: 300;
+    color: #616161;
     padding: 5px;
     border: 1px solid;
-    border-color: #757575;
-    background-color: #757575;
+    border-color: #616161;
+    background-color: #E0E0E0;
     transition: border-color 0.2s ease;
-}
-input:hover
-{
-    border: 1px solid;
-    border-color: #E0E0E0;
 }
 textarea
 {
@@ -51,17 +47,13 @@ textarea
     resize: vertical;
     font-family: 'FontAwesome', Roboto, sans-serif;
     font-size: calc(12px + 0.3vw);
-    color: #E0E0E0;
+    font-weight: 300;
+    color: #616161;
     padding: 5px;
     border: 1px solid;
-    border-color: #757575;
-    background-color: #757575;
+    border-color: #616161;
+    background-color: #E0E0E0;
     transition: border-color 0.2s ease;
-}
-textarea:hover
-{
-    border: 1px solid;
-    border-color: #E0E0E0;
 }
 h1
 {
@@ -138,20 +130,20 @@ h3
 }
 #send_button
 {
-    background-color: #616161;
-    color: #E0E0E0;
+    background-color: #E0E0E0;
+    color: #616161;
     border: 1px solid;
-    border-color: #E0E0E0;
+    border-color: #616161;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 #send_button:hover
 {
-    background-color: #E0E0E0;
-    color: #616161
+    background-color: #616161;
+    color: #E0E0E0
 }
 #send_button:active{
-    color: turquoise;
-    border-color: turquoise;
+    color: #E0E0E0;
+    border-color: #E0E0E0;
 }
 a
 {
