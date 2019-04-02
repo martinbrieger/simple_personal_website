@@ -1,8 +1,8 @@
 <?php
 
-$EmailFrom = "mceo@mailbox.org";
-$EmailTo = "mceo@mailbox.org";
-$Subject = "Contact Form Test";
+$EmailFrom = "form@christina-brieger.de";
+$EmailTo = "form@christina-brieger.de";
+$Subject = "Neue Nachricht via Kontaktfeld";
 $name = Trim(stripslashes($_POST['name'])); 
 $email = Trim(stripslashes($_POST['email'])); 
 $message = Trim(stripslashes($_POST['message'])); 
