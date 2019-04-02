@@ -1,34 +1,35 @@
-@-ms-viewport
-{
+@-ms-viewport {
     width: device-width;
 }
-@-o-viewport
-{
+
+@-o-viewport {
     width: device-width;
 }
-@viewport
-{
+
+@viewport {
     width: device-width;
 }
 
 
 /*groups*/
-body
-{
+body {
     margin: 0 0 0 0;
 }
-html
-{
+
+html {
     background-color: #EEEEEE;
     margin-left: 15%;
     margin-right: 15%;
     animation: fadein 3s;
-    -moz-animation: fadein 3s; /* Firefox */
-    -webkit-animation: fadein 3s; /* Safari and Chrome */
-    -o-animation: fadein 3s; /* Opera */
+    -moz-animation: fadein 3s;
+    /* Firefox */
+    -webkit-animation: fadein 3s;
+    /* Safari and Chrome */
+    -o-animation: fadein 3s;
+    /* Opera */
 }
-input
-{
+
+input {
     width: 100%;
     font-family: 'FontAwesome', Roboto, sans-serif;
     font-size: calc(12px + 0.3vw);
@@ -40,8 +41,8 @@ input
     background-color: #E0E0E0;
     transition: border-color 0.2s ease;
 }
-textarea
-{
+
+textarea {
     width: 100%;
     min-height: 2em;
     resize: vertical;
@@ -55,23 +56,23 @@ textarea
     background-color: #E0E0E0;
     transition: border-color 0.2s ease;
 }
-h1
-{
+
+h1 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     font-size: calc(20px + 2.6vw);
     color: #616161;
 }
-h2
-{
+
+h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: calc(18px + 2.4vw);
     color: #616161;
 
 }
-h3
-{
+
+h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: calc(16px + 2vw);
@@ -79,14 +80,13 @@ h3
 }
 
 /* IDs */
-#header
-{
+#header {
     padding: 2vw 20px 2vw 20px;
     text-align: center;
     line-height: 1.6rem
 }
-#Text
-{
+
+#Text {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: calc(14px + 0.2vw);
@@ -95,16 +95,16 @@ h3
     background-color: #E0E0E0;
     border-radius: 1px;
 }
-#social_pane
-{
+
+#social_pane {
     background-color: #E0E0E0;
     border-radius: 1px 1px 0 0;
     margin-top: calc(20px + 2vw);
     margin-bottom: 0px;
 }
-#social_pane_left
-{
-    width: 50%; 
+
+#social_pane_left {
+    width: 50%;
     float: left;
     text-align: left;
     font-family: 'Roboto', sans-serif;
@@ -113,13 +113,13 @@ h3
     color: #616161;
     padding: 20px;
 }
-.fas
-{
+
+.fas {
     padding-right: 20px;
 }
-#social_pane_right
-{
-    width: 50%; 
+
+#social_pane_right {
+    width: 50%;
     float: right;
     text-align: right;
     font-family: 'Roboto', sans-serif;
@@ -128,34 +128,35 @@ h3
     color: #616161;
     padding: 20px;
 }
-#send_button
-{
+
+#send_button {
     background-color: #E0E0E0;
     color: #616161;
     border: 1px solid;
     border-color: #616161;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-#send_button:hover
-{
+
+#send_button:hover {
     background-color: #616161;
     color: #E0E0E0
 }
-#send_button:active{
+
+#send_button:active {
     color: #E0E0E0;
     border-color: #E0E0E0;
 }
-a
-{
+
+a {
     color: inherit;
 }
-p
-{
+
+p {
     margin: 0;
 }
-#footer
-{
-    width: 100%; 
+
+#footer {
+    width: 100%;
     overflow: hidden;
     vertical-align: bottom;
     font-family: 'Roboto', sans-serif;
@@ -169,8 +170,8 @@ p
     float: center;
     text-align: center;
 }
-.privacy
-{
+
+.privacy {
     text-align: left;
     padding: 20px;
     font-family: 'Roboto', sans-serif;
@@ -179,56 +180,71 @@ p
     background-color: #E0E0E0;
 
 }
+
 @keyframes fadein {
     from {
-        opacity:0;
+        opacity: 0;
     }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
+
     to {
         opacity: 1;
     }
 }
 
-@media screen and (max-width: 700px)
-{
+@-moz-keyframes fadein {
+
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 700px) {
     #social_pane_left {
         float: none;
         width: 100%;
     }
+
     #social_pane_right {
         float: none;
         width: 100%;
         padding-top: 0px;
     }
+
     .privacy {
         width: 100%;
     }
 }
-@media screen and (max-width: 1200px)
-{
+
+@media screen and (max-width: 1200px) {
     html {
         margin-left: 0%;
         margin-right: 0%;

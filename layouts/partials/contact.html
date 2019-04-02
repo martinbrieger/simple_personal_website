@@ -1,46 +1,53 @@
 <div id="social_pane">
-  <div class="shadow" style="width: 100%; overflow: hidden;">
-      <div id="social_pane_left">
+    <div class="shadow" style="width: 100%; overflow: hidden;">
+        <div id="social_pane_left">
             <table>
+                <tr>
+                    <td style="vertical-align:top"><i class="fas fa-home"></i></td>
+                    <td><a>Christina Brieger, Dipl. Ing. (FH), Architektin</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a>83022 Rosenheim, Deutschland</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-envelope"></i></td>
+                    <td><a href="mailto:{{ .Site.Params.social.email }}"
+                            aria-label="Email">{{ .Site.Params.social.email }}</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-phone"></i></td>
+                    <td><a href="tel:+4916098744894‬" style="text-decoration: none">0160 98744894‬</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="social_pane_right">
+            <form action="mail_handler.php" method="POST">
+                <table style="width: 100%; overflow: hidden;">
                     <tr>
-                        <td style="vertical-align:top"><i class="fas fa-home"></i></td>
-                        <td><a>Christina Brieger, Dipl. Ing. (FH), Architektin</a></td>
-                        <td></td>
-                        <td></td>
+                        <td style="width: 50%; float: left;"><input type="email" name="mail" id="mail"
+                                value="&#xf0e0;  E-Mail" onfocus="if(this.value==this.defaultValue)this.value='';"
+                                onblur="if(this.value=='')this.value=this.defaultValue;" required></td>
+                        <td style="width: 50%; float: left;"><input type="text" name="name" id="name"
+                                value="&#xf007;  Name" onfocus="if(this.value==this.defaultValue)this.value='';"
+                                onblur="if(this.value=='')this.value=this.defaultValue;"></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td><a>83022 Rosenheim, Deutschland</a></td>
+                        <td colspan="2" style="width: 100%; float: left;"><textarea id="message" name="message"
+                                placeholder="&#xf036;  Nachricht" rows="2">&#xf036;  Nachricht</textarea></td>
                     </tr>
                     <tr>
-                        <td><i class="fas fa-envelope"></i></td>
-                        <td><a href="mailto:{{ .Site.Params.social.email }}" aria-label="Email">{{ .Site.Params.social.email }}</a></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-phone"></i></td>
-                        <td><a href="tel:+4916098744894‬" style="text-decoration: none">0160 98744894‬</a></td>
+                        <td style="width: 50%; float: left;"></td>
+                        <td style="width: 50%; float: right;"><input id=send_button type="submit"
+                                value="Nachricht senden"></td>
                     </tr>
                 </table>
-      </div>
-      <div id="social_pane_right">
-        <form action="mail_handler.php" method="POST">
-          <table style="width: 100%; overflow: hidden;">
-            <tr>
-                <td style="width: 50%; float: left;"><input type="email" name="mail" id="mail" value="&#xf0e0;  E-Mail" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" required></td>
-                <td style="width: 50%; float: left;"><input type="text" name="name" id="name" value="&#xf007;  Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"></td>
-            </tr>
-            <tr>
-                <td colspan="2" style="width: 100%; float: left;"><textarea id="message" name="message" placeholder="&#xf036;  Nachricht" rows="2">&#xf036;  Nachricht</textarea></td>
-            </tr>
-            <tr>
-                <td style="width: 50%; float: left;"></td>
-                <td style="width: 50%; float: right;"><input id=send_button type="submit" value="Nachricht senden"></td>
-            </tr>
-          </table>
-        </form>
-            
-      </div>
-  </div>
+            </form>
+
+        </div>
+    </div>
 </div>

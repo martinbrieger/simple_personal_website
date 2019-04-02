@@ -1,73 +1,73 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  /* Position the image container (needed to position the left and right arrows) */
-  .container {
-    position: relative;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
+  box-sizing: border-box;
 }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: calc(42% - 14px);
-    width: auto;
-    padding: 18px 18px 14px 18px;
-    margin-top: -15px;
-    color: #E0E0E0;
-    font-weight: bold;
-    font-size: 24px;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: #616161;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
-  
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.5;
-    transition: opacity 0.2s ease;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
 
-  /* Fading animation */
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: calc(42% - 14px);
+  width: auto;
+  padding: 18px 18px 14px 18px;
+  margin-top: -15px;
+  color: #E0E0E0;
+  font-weight: bold;
+  font-size: 24px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #616161;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 4s;
@@ -78,11 +78,21 @@
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .2}
-  to {opacity: 1}
+  from {
+    opacity: .2
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .2}
-  to {opacity: 1}
+  from {
+    opacity: .2
+  }
+
+  to {
+    opacity: 1
+  }
 }
